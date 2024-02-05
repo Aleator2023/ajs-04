@@ -2,11 +2,10 @@
   "name": "ajs-04",
   "version": "1.0.0",
   "description": "Ajs lesson 4",
-
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aleator2023/ajs-04.git"},
-
+    "url": "https://github.com/Aleator2023/ajs-04.git"
+  },
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
@@ -20,6 +19,8 @@
     "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "core-js": "^3.35.1",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
   }
 }
