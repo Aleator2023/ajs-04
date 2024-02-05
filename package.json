@@ -1,9 +1,15 @@
 {
   "name": "ajs-04",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ajs lesson 4",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aleator2023/ajs-04.git"},
+
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "test": "jest --coverage"
   },
   "keywords": [],
