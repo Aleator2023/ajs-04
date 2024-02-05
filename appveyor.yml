@@ -1,0 +1,24 @@
+# Указываем операционную систему
+image: Ubuntu
+
+# Настройка среды
+environment:
+  matrix:
+  - nodejs_version: "14"
+
+# Установка зависимостей
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install
+
+# Настройка сценария сборки
+build_script:
+  - npm run build # Замените на вашу команду сборки, если она отличается
+
+# Настройка сценария тестирования
+test_script:
+  - npm test
+
+# Настройка после сборки (необязательно)
+after_build:
+  - echo Build completed
